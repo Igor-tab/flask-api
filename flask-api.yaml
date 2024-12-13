@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: flask-api
-          image: igortab/flask-api:latest
+          image: igortab/flask-api:ac52ae1ca9a7ed0cca7bcfb1d960948bd353eb01
           imagePullPolicy: Always
           ports:
           - containerPort: 5000
