@@ -26,7 +26,7 @@ jobs:
 
             - name: Update Deployment Manifest
               run: |
-                sed -i "s|image: igortab/flask-api:.*|image: igortab/flask-api:${{ github.sha }}|" deployment.yaml
+                sed -i "s|image: igortab/flask-api:.*|image: igortab/flask-api:${{ github.sha }}|" flask-api.yaml
 
             - name: Commit and Push Changes
               run: |
