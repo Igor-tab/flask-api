@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flask-api
+spec:
   labels:
     app: flask-api
-spec:
   replicas: 1
   selector:
     matchLabels:
@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         app: flask-api
+        k8s-app: flask-api
     spec:
       containers:
         - name: flask-api
