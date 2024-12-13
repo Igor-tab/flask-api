@@ -36,7 +36,7 @@ spec:
   type: LoadBalancer
   selector:
     app: flask-api
-    k8s: flask-api
+    k8s-app: flask-api
   ports:
   - protocol: TCP
     port: 5000
